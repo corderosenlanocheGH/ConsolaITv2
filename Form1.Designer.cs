@@ -2,6 +2,8 @@
 {
     partial class Form1
     {
+        private System.Windows.Forms.TextBox txtEntrada;
+
         /// <summary>
         /// Variable del diseñador necesaria.
         /// </summary>
@@ -29,9 +31,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.txtEntrada = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // txtEntrada
+            // 
+            this.txtEntrada.Location = new System.Drawing.Point(40, 40);
+            this.txtEntrada.Name = "txtEntrada";
+            this.txtEntrada.Size = new System.Drawing.Size(280, 22);
+            this.txtEntrada.TabIndex = 0;
+            // 
+            // Form1
+            // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtEntrada);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
